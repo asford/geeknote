@@ -220,7 +220,7 @@ def showNote(note, id, shardId):
 @preloaderStop
 def showNoteRaw(note):
     from editor import Editor
-    printLine(Editor.ENMLtoText(note.content, 'pre'))
+    printLine(note.content, 'pre')
 
 
 @preloaderStop
