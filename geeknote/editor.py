@@ -16,6 +16,9 @@ from storage import Storage
 from log import logging
 from xml.sax.saxutils import escape, unescape
 
+html2text.config.MARK_CODE = True
+html2text.config.BODY_WIDTH = None
+
 
 class EditorThread(threading.Thread):
 
